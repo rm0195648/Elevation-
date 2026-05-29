@@ -183,14 +183,21 @@ h1 {
 
     100% {
         transform: scale(1)
-    }
+    }.about-me__info--title {
+    font-size: 28px;
+    margin-bottom: 0px;
+    animation: fade-up 650ms 400ms backwards;
 }
 
 .about-me__picture {
     width: 100%;
+    transform: scale(1.5);
+    padding-top: 8px;
+}
 
 
 /* Improving my own picture */
+
 transform: scale(1.5);
 padding-top: 8px;
 }
@@ -326,10 +333,11 @@ padding-top: 8px;
     font-size: 28px;
     margin-bottom: 0px;
     animation: fade-up 650ms 400ms backwards;
+}
 
 /* SMALL PHONES */
 @media (max-width: 480px) {
-      .nav__link:not(:last-child) {
+      .nav__link:not(:last-child)
         display: none;
       }
 
@@ -360,9 +368,21 @@ padding-top: 8px;
         margin: 12px 0;
       }
 
-    
-    
-  
+       img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
+        .about-me__img--container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-
+        about-me__picture {
+        width: 200px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
