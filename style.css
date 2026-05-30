@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, span {
     text-align: center;
     line-height: 1.25;
     font-weight: 700;
+    text-shadow: 1px 1px 1px black;
 }
 
 p {
@@ -217,6 +218,7 @@ h1 {
     margin-bottom: 28px;
     margin-top: 0px;
     animation: fade-up 650ms 600ms backwards;
+    text-align: center;
 }
 
 .about-me__link {
@@ -272,7 +274,7 @@ h1 {
 .footer__logo img {
     width: 100px;
     height: 100px;
-    margin-top: 200px;
+    margin-top: 18px;
     padding-bottom: 12px;
 
 }
@@ -292,6 +294,7 @@ h1 {
     font-size: 24px;
     color: blue;
     font-weight: 700;
+    text-shadow: 1px 1px 1px white;
 }
 .footer__trial p {
     font-size: 18px;
