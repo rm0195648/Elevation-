@@ -165,7 +165,7 @@ h1 {
 }
 
 .about-me__picture--mask {
-    overflow: hidden;
+    
     width: 25%;
     height: 25%;
     border-radius: 0%;
