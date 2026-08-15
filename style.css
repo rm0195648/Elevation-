@@ -212,6 +212,7 @@ h1 {
     font-size: 38px;
     margin-bottom: 0px;
     animation: fade-up 650ms 400ms backwards;
+    color: black;
 }
 
 .about-me__info--para {
@@ -279,6 +280,12 @@ h1 {
 #pricing .section__para {
     max-width: 576px;
     text-align: center;
+}
+
+.plans {
+   display: flex;
+   justify-content: center;
+    gap: 80px;
 }
 
 .plan {
