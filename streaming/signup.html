@@ -1,0 +1,67 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Elevation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="signup__wrapper">
+
+                    <img src="./assets/logo.png"
+                    <p class="signup__para">
+                        Complete the form below and a member of our team
+                        will contact you shortly to get you started with
+                        Elevation Network.
+                    </p>
+
+                    <form action="https://formsubmit.co/rm.elevation.official@gmail.com"
+                          method="POST"
+                          class="signup__form">
+
+                        <input type="text"
+                               name="name"
+                               placeholder="Full Name"
+                               required>
+
+                        <input type="email"
+                               name="email"
+                               placeholder="Email Address"
+                               required>
+
+                        <input type="tel"
+                               name="phone"
+                               placeholder="Phone Number"
+                               required>
+
+                        <select name="contact_method">
+                            <option value="">Preferred Contact Method</option>
+                            <option value="Phone Call">Phone Call</option>
+                            <option value="Text Message">Text Message</option>
+                            <option value="Email">Email</option>
+                        </select>
+
+                        <textarea name="message"
+                                  rows="5"
+                                  placeholder="How did you hear about us?"></textarea>
+
+                        <!-- FormSubmit Settings -->
+                        <input type="hidden" name="_subject" value="New Elevation Lead">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <button type="submit" class="signup__button">
+                            Submit
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

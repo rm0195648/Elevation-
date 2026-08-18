@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevation Web Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="row nav__row">
+                <div class="nav__logo">
+                    <img class="nav__logo--img" src="./assets/logo.png" alt="LOGO">
+                    <div class="nav__logo--title"></div>
+                </div>
+                <div class="nav__links">
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Pricing</a>
+                    <a href="#" class="nav__link">Services</a>
+                    <a href="#" class="nav__link nav__link--primary">Contact Us</a>
+                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light__StyledCloseIcon-lj69nl-14 faSujc">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="menu__links">
+                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="#contact" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                <a href="login" class="menu__link" onclick="closeMenu()">Login</a>
+                <a href="signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__description">
+                        <h1> Elevation Web Services</h1>
+                        <p class="header__description--para">
+                            Web Design | Graphic Design | Branding | Print Design
+                        </p>
+                        <div class="header__email">
+                            <input type="text" class="header__email--input" placeholder="Enter your email">
+                            <button class="header__email--btn">Get A Free Quote</button>
+                        </div>
+                        
+                    </div>
+                    <figure class="header__img--wrapper">
+                        <img src="./assets/design1.svg" class="header__img">
+                    </figure>
+                </div>
+            </div>
+        </header>
+    </section> 
+    <main> 
+        <section id="features">
+            <div class="container">
+                <div class="row__narrow">
+                    <h4 class="section__tag">Services</h4>
+                    <h2 class="section__title">
+                        Everything Your Business Needs
+                            <span class="purple">In One Place.</span>
+                    </h2>
+                    <div class="section__para">
+                        <p>
+                            Whether you're launching a new business or refreshing your brand, Elevation Web Services provides creative solutions designed to help you make a lasting impression.
+                        </p>
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/globe-solid-full blue (1).svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Website Design</h2>
+                                    <p class="feature__para">
+                                        Responsive websites built for speed, mobile devices, and SEO.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/palette-solid-full.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Logo Design</h2>
+                                    <p class="feature__para">
+                                        Professional logos and complete branding packages.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/busicard-solid-full.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Business Cards</h2>
+                                    <p class="feature__para">
+                                        Custom business cards with professional printing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/stack-overflow-brands-solid-full.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Flyers & Ads</h2>
+                                    <p class="feature__para">
+                                        Eye-catching advertisements, flyers, brochures, and promotional graphics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/print-solid-full.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Print Design</h2>
+                                    <p class="feature__para">
+                                        Posters, banners, yard signs, stickers, postcards, and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="feature__img--wrapper">
+                                    <img src="./assets/gear-solid-full.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Website Maintenance</h2>
+                                    <p class="feature__para">
+                                        Keep your website secure, updated, and performing at its best.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quality">
+            <div class="container">
+                <div class="row">
+                    <figure class="quality__img--wrapper">
+                        <img src="assets/ScreenshotHJM.png" class="quality__img">
+                    </figure>
+                    <div class="quality__description">
+                        <div class="section__tag">QUALITY WORK </div>
+                        <h2 class="section__title">Creative Designs That Make Your Business Stand Out.</h2>
+                        <p class="section__para">At Elevation Web Services, we combine creativity and technology to deliver
+                    professional websites, logos, business cards, flyers,
+                    social media graphics, and branding solutions. Every project is designed
+                    with attention to detail, using industry-leading Adobe software and modern
+                    web development practices.</p>
+                        <button class="btn">View Our Work</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="values">
+            <div class="container">
+                <div class="row">
+                    <div class="values__description">
+                        <div class="section__tag">WHY CHOOSE US </div>
+                        <h2 class="section__title">Creative Solutions You Can Count On</h2>
+                        <p class="section__para">We believe every business deserves professional, eye-catching designs that
+                    leave a lasting impression. From branding and print materials to websites,
+                    we're committed to delivering quality work with exceptional customer service.</p>
+                        <div class="values__list">
+                            <div class="value">
+                                <div class="value__title">
+                                    <figure class="value__img--wrapper">
+                                        <img src="assets/dollar-sign (1).svg" class="value__img">
+                                    </figure>
+                                    <div class="value__name">Affordable Pricing</div>
+                                </div>
+                                <div class="value__para">
+                                    <p>Professional design services at competitive prices, giving small businesses
+                                        high-quality results without breaking the budget.</p>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="value">
+                            <div class="value__title">
+                                <figure class="value__img--wrapper">
+                                    <img src="assets/briefcase.svg" class="value__img">
+                                </figure>
+                                <div class="value__name">Professional Quality</div>
+                            </div>
+                            <div class="value__para">
+                                <p>Every project is created using Adobe Photoshop, Illustrator, InDesign,
+                                    and modern web development tools to ensure polished, professional results.</p>
+                            </div>
+                        </div>
+                        <button class="btn">Request a Quote</button>
+                    </div>
+                    <figure class="quality__img--wrapper">
+                        <img src="assets/codingimage.png" class="quality__img">
+                    </figure>
+                </div>
+            </div>
+        </section>   
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt class="testimonials__img">
+                    <div class="testimonials__description">
+                        <div class="section__tag"> testimonials</div>
+                        <h2 class="section__title">Our Clients Love Working with Us</h2>
+                        <p class="section__para">Building long-term relationships with our clients is one of our top priorities.
+                    We take pride in delivering creative, professional designs and outstanding
+                    customer service on every project.</p>
+                        <div class="testimonial">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <h3 class="testimonial__title"></h3>
+                            <p class="testimonial__para"></p>
+                            <div class="testimonial__botton">
+                                <div class="testimonial__profile">
+                                    <img src="assets/logo.png" class="testimonial__img">
+                                    <div class="testimonial__details">
+                                        <div class="testimonial__name"></div>
+                                        <div class="tesdtimonial__role"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="start">
+            <div class="container">
+                <div class="row">
+                    <div class="start__container">
+                        <div class="start__title">
+                            Ready to Elevate Your Brand?
+                        </div>
+                        <div class="start__buttons">
+                            <button class="start__button btn">Get A Free Quote </button>
+                            <button class="start__button btn">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+     </main> 
+     <footer>
+        <div class="row footer__row">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <div class="footer__column--title">Services</div>
+                    <a class="footer__column--link">Website Development</a>
+                    <a class="footer__column--link">Logo Design</a>
+                    <a class="footer__column--link">Print Design</a>
+                    <a class="footer__column--link">Branding</a>
+                    <a class="footer__column--link">Graphic Design</a>
+                    <a href="streaming/index.html" class="footer__column--link">Elevation Streaming</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title">Company</div>
+                    <a class="footer__column--link">About</a>
+                    <a class="footer__column--link">Portfolio</a>
+                    <a class="footer__column--link">Contact</a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title">Contact</div>
+                    <a class="footer__column--link">Email</a>
+                    <a class="footer__column--link">Phone</a>
+                    <a class="footer__column--link">Facebook</a>
+                    <a class="footer__column--link">Instagram</a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+             <div class="footer__bottom">
+                <div class="footer__logo">
+                    <img src="assets/logo.png" alt class="footer__logo--img">
+                    <h5 class="footer__logo--text">Elevation</h5>
+                </div>
+                <div class="footer__copyright"><p>© 2026 Elevation Web Services. All rights reserved.</p></div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer__social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
