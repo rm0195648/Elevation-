@@ -496,6 +496,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 #quality .section__title,
@@ -509,7 +510,8 @@ header{
 
 .quality__description {
     max-width: 576px;
-    margin-top: 32px;
+    margin-top: 0px;
+    justify-content: center;
 }
 
 .quality__description,
@@ -536,6 +538,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .steps__img--wrapper {
@@ -589,6 +592,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 #values .section__title {
   margin-top: 16px;
@@ -596,11 +600,12 @@ header{
 }
 #values .btn {
   margin-top: 48px;
+  align-self: center;
 }
 .value {
   margin-top: 2rem;
   margin-right: 2rem;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -670,6 +675,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 #pricing .section__para {
@@ -1034,7 +1040,7 @@ main {
 footer {
     padding: 40px 32px;
     background-color: blue;
-    margin-bottom: -32px;
+    margin-bottom: 0px;
     position: relative;
     overflow: hidden;
 }
@@ -1446,4 +1452,13 @@ footer {
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+#values {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+main {
+    margin-bottom: 0;
 }
