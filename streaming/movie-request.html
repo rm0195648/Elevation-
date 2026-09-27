@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Request | Elevation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .movie-page {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .movie-container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .movie-logo {
+            width: 180px;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px;
+        }
+
+        .movie-title {
+            margin: 0 0 15px;
+            color: blue;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .movie-description {
+            margin: 0 auto 30px;
+            max-width: 550px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .movie-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .movie-form input,
+        .movie-form textarea {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            outline: none;
+        }
+
+        .movie-form input:focus,
+        .movie-form textarea:focus {
+            border-color: blue;
+        }
+
+        .movie-form textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        .movie-button {
+            width: fit-content;
+            margin: 5px auto 0;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: blue;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .movie-button:hover {
+            background: #0000b5;
+        }
+
+        .movie-back {
+            display: inline-block;
+            margin-top: 25px;
+            color: blue;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .movie-back:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+
+            .movie-page {
+                padding: 40px 20px;
+            }
+
+            .movie-logo {
+                width: 140px;
+            }
+
+            .movie-title {
+                font-size: 30px;
+            }
+
+            .movie-description {
+                font-size: 16px;
+            }
+
+            .movie-form input,
+            .movie-form textarea {
+                padding: 14px;
+                font-size: 15px;
+            }
+
+            .movie-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="movie-page">
+
+        <div class="movie-container">
+
+            <img
+                src="./assets/logo.png"
+                class="movie-logo"
+                alt="Elevation Network Logo"
+            >
+
+            <h1 class="movie-title">
+                Request a Movie or Series
+            </h1>
+
+            <p class="movie-description">
+                Can't find the movie or series you're looking for?
+                Submit a request below.
+            </p>
+
+            <form
+                action="https://formsubmit.co/rm.elevation.official@gmail.com"
+                method="POST"
+                class="movie-form"
+            >
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                >
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="movie"
+                    placeholder="Movie Title"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="year"
+                    placeholder="Release Year"
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Additional Information"
+                ></textarea>
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Elevation Movie Request"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+                <button
+                    type="submit"
+                    class="movie-button"
+                >
+                    Submit Movie Request
+                </button>
+
+            </form>
+
+            <a
+                href="index.html"
+                class="movie-back"
+            >
+                ← Back to Elevation
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
