@@ -409,6 +409,17 @@
   action="https://formsubmit.co/rm.elevation.official@gmail.com"
   method="POST"
 >
+
+<!-- FormSubmit spam protection -->
+<input type="hidden" name="_captcha" value="false">
+
+<!-- Hidden honeypot field -->
+<input type="text" name="_honey"
+       style="display:none"
+       tabindex="-1"
+       autocomplete="off">
+
+
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="fullName">Your Name <span class="text-error">*</span></label>
