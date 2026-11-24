@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="googlebot" content="noindex, follow">
+  <meta name="theme-color" content="#111827">
+  <title>Request a Movie or Series | Elevation Network</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1020; --panel:#151d32; --line:#2b3854; --text:#f5f7fb; --muted:#aab6cc; --accent:#8b5cf6; --accent2:#6d4aff; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; padding:32px 16px; display:grid; place-items:center; background:radial-gradient(ellipse at top,#202c4b 0%,#0b1020 58%); color:var(--text); font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .wrap { width:min(100%,620px); }
+    .brand { text-align:center; margin-bottom:22px; font-size:1.05rem; font-weight:850; letter-spacing:.18em; }
+    .brand span { color:#a78bfa; }
+    .panel { padding:clamp(24px,5vw,42px); background:rgba(21,29,50,.96); border:1px solid var(--line); border-radius:22px; box-shadow:0 24px 80px rgba(0,0,0,.35); }
+    .eyebrow { color:#b9a5ff; text-transform:uppercase; font-size:.72rem; font-weight:800; letter-spacing:.16em; }
+    h1 { margin:9px 0 8px; font-size:clamp(1.8rem,5vw,2.45rem); letter-spacing:-.04em; }
+    .intro { color:var(--muted); margin:0 0 27px; line-height:1.6; }
+    label { display:block; margin:17px 0 7px; font-size:.9rem; font-weight:700; }
+    .optional { color:var(--muted); font-weight:400; }
+    input, select, textarea { width:100%; padding:13px 14px; border:1px solid #3a4968; border-radius:11px; background:#0e1629; color:var(--text); font:inherit; outline:none; }
+    input:focus, select:focus, textarea:focus { border-color:#a78bfa; box-shadow:0 0 0 3px rgba(139,92,246,.18); }
+    textarea { min-height:112px; resize:vertical; }
+    .hint { color:var(--muted); font-size:.78rem; margin:7px 0 0; }
+    button { width:100%; margin-top:24px; padding:14px 18px; border:0; border-radius:11px; color:white; background:linear-gradient(100deg,var(--accent),var(--accent2)); font:inherit; font-weight:800; cursor:pointer; }
+    button:hover { filter:brightness(1.1); }
+    .back { display:block; margin:22px auto 0; text-align:center; color:#c4b5fd; text-decoration:none; font-size:.9rem; }
+    .back:hover { text-decoration:underline; }
+    .small { margin-top:22px; text-align:center; color:#8794ad; font-size:.75rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">ELEVATION ENTERTAINMENT<span>.</span></div>
+    <section class="panel">
+      <div class="eyebrow">Movie &amp; Series Requests</div>
+      <h1>What do you want to watch?</h1>
+      <p class="intro">Have a movie or series in mind? Send us your request using the form below. </p>
+
+      <p class="hint">(Please check if the title is already available on our platform before submitting.)</p>
+
+      <form action="https://formsubmit.co/rm.elevation.official@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Movie/Series Request - Elevation Network">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <label for="name">Full Name</label>
+        <input id="name" name="Full Name" type="text" autocomplete="name" placeholder="Enter your name" required>
+
+        <label for="kind">Request Type</label>
+        <select id="kind" name="Request Type" required>
+          <option value="" disabled selected>Select one</option>
+          <option>Movie</option>
+          <option>TV Series</option>
+        </select>
+
+        <label for="title">Movie or Series Title</label>
+        <input id="title" name="Movie or Series Title" type="text" placeholder="Enter the title" required>
+
+       <label for="title">Release Year <span class="optional"></span></label>
+        <input id="title" name="Movie or Series Title" type="text" placeholder="Enter year" required>
+
+        <label for="notes">Additional Information <span class="optional">(optional)</span></label>
+        <textarea id="notes" name="Additional Information" placeholder="Season, language, version, or anything else that may help us identify your request."></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
